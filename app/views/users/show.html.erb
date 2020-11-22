@@ -1,13 +1,8 @@
-<%= link_to "ホーム", home_path%>
-<br>
-<%= "こんにちは、" %>
-<%= link_to current_user.email, users_show_path %>
-<br>
-<%= link_to "ログアウト", destroy_user_session_path, :method=>'delete'%>
-<br>
-<hr>
-<br>
 <h1>プロフィール</h1>
+<%= current_user.name %>
+<h2>年齢</h2>
+<%= current_user.age %>
 <h2>メールアドレス</h2>
 <%= current_user.email %>
-
+<br>
+<%= link_to '編集情報', edit_user_registration_path %>
