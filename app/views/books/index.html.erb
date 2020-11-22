@@ -1,3 +1,11 @@
+<% if user_signed_in? %> 
+    <%= link_to "ホーム", home_path%>
+    <%= "こんにちは、" %>
+    <%= current_user.email %>
+    <br>
+    <%= link_to "ログアウト", destroy_user_session_path, :method=>'delete'%>
+    <hr>
+<% end %>
 <p id="notice"><%= notice %></p>
 
 <h1>Books</h1>
