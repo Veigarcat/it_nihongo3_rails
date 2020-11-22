@@ -1,0 +1,13 @@
+<%= link_to "ホーム", home_path%>
+<br>
+<%= "こんにちは、" %>
+<%= link_to current_user.email, users_show_path %>
+<br>
+<%= link_to "ログアウト", destroy_user_session_path, :method=>'delete'%>
+<br>
+<hr>
+<br>
+<h1>プロフィール</h1>
+<h2>メールアドレス</h2>
+<%= current_user.email %>
+
