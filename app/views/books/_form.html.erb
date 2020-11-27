@@ -22,9 +22,14 @@
   </div>
   
   <div>
-      <%= form.label :image %>
-      <%= form.file_field :image %>
-    </div>
+    <%= form.label :detail %>
+    <%= form.text_area :detail %>
+  </div>
+  
+  <div>
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  </div>
 
   <div class="actions">
     <%= form.submit %>
